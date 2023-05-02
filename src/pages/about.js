@@ -49,18 +49,16 @@ const about = () => {
                                 Biography
                             </h2>
                             <p className="font-medium">
-                                Hi, I'm Junaid, a web developer and a machine learning and computer vision enthusiast with over 3 years of experience
-                                in the field. I am always looking for new and innovative ways to solve problems and create intuitive and enjoyable
+                                Hi, I&apos;m Junaid, a web developer and a machine learning and computer vision enthusiast with over 3 years of experience in the field. I am always looking for new and innovative ways to solve problems and create intuitive and enjoyable
                                 digital experiences for users.
                             </p>
                             <p className="my-4 font-medium">
                                 I believe that design and development go hand in hand and that a great user experience is essential to the success of
                                 any digital product. My expertise in machine learning and computer vision allows me to bring a unique perspective to
-                                web development and create cutting-edge solutions that meet the needs of today's users.
-                            </p>
+                                web development and create cutting-edge solutions that meet the needs of today&apos;s users.
+                                </p>
                             <p className="font-medium">
-                                Whether I'm working on a website, mobile app, or other digital product, I am committed to design and development excellence
-                                and always keep the user at the forefront of my thinking. I look forward to the opportunity to bring my skills and passion
+                                Whether I&apos;m working on a website, mobile app, or other digital product, I am committed to design and development excellence and always keep the user at the forefront of my thinking. I look forward to the opportunity to bring my skills and passion
                                 to your next project.
                             </p>
                         </div>
