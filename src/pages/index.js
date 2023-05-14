@@ -8,6 +8,7 @@ import HireMe from '@/components/HireMe';
 import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
 import profilePic from "../../public/images/profile/developer-pic-2.png";
 import TransitionEffect from '@/components/TransitionEffect';
+import ProfileImage from '@/components/ProfileImage';
 
 export default function Home() {
   return (
@@ -22,13 +23,14 @@ export default function Home() {
         <Layout className='pt-0 md:pt-16 sm:pt-8'>
           <div className='flex items-center justify-between w-full lg:flex-col'>
             <div className='w-1/2 md:w-full'>
-              <Image src={profilePic} alt="Junaid" className="w-full h-auto rounded-full lg:hidden md:inline-block md:w-full"
+              <ProfileImage/>
+              {/* <Image src={profilePic} alt="Junaid" className="w-full h-auto rounded-full lg:hidden md:inline-block md:w-full"
                 priority
                 sizes="(max-width: 768px) 100vm,
                (max-width:1200px) 50vm, 50vm"
 
               ////max-w-xl
-              />
+              /> */}
             </div>
             <div className='w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center'>
               <AnimatedText text="Turning Vision Into Reality With Code And Design." className='!text-6xl !text-left 
