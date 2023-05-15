@@ -21,7 +21,8 @@ export default function Home() {
       <main className='flex items-center text-dark w-full min-h-screen dark:text-light'>
         <Layout className='pt-0 md:pt-16 sm:pt-8'>
           <div className='flex items-center justify-between w-full lg:flex-col'>
-            <div className='w-1/2 md:w-full'>
+            <div className='w-1/3 md:w-full shadow-[0_25px_50px_8px_rgba(0,0,0,0.5)] 
+            rounded-full border-3 border-solid border-gray-900'>
               <Image src={profilePic} alt="Junaid" className="w-full h-auto rounded-full lg:hidden md:inline-block md:w-full"
                 priority
                 sizes="(max-width: 768px) 100vm,
