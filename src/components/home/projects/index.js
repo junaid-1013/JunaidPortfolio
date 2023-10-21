@@ -9,12 +9,11 @@ export const Projects = () => {
       id="projects"
       className="flex flex-col items-center justify-center w-full mb-16 dark:text-light"
     >
-      <Layout>
+      <Layout className="-mt-32 xl:mt-0">
         <AnimatedText
-          text="Imagination Trumps Knowledge!"
+          text="My Work"
           className="mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl"
         />
-
         <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
           {FEATURED_PROJECTS.map(
             ({ github, img, link, summary, title, type }, i) => (

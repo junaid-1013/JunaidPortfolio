@@ -41,12 +41,12 @@ export const About = () => {
       className="flex flex-col items-center justify-center w-full dark:text-light"
     >
       <Layout className="pt-16">
-        <AnimatedText
+        {/* <AnimatedText
           text="Passion Fuels Purpose!"
           className="mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
-        />
+        /> */}
         <div className="grid w-full grid-cols-8 gap-16 sm:gap-8">
-          <div className="flex flex-col items-start justify-start col-span-3 space-y-4 xl:col-span-4 md:order-2 md:col-span-8">
+          {/* <div className="flex flex-col items-start justify-start col-span-3 space-y-4 xl:col-span-4 md:order-2 md:col-span-8">
             <h2 className="text-lg font-bold uppercase text-dark/75 dark:text-light/75">
               Biography
             </h2>
@@ -86,9 +86,9 @@ export const About = () => {
                              (max-width:1200px) 50vm,
                               33vm"
             />
-          </div>
+          </div> */}
 
-          <div className="flex flex-col items-end justify-between col-span-2 xl:col-span-8 xl:flex-row xl:items-center md:order-3">
+          <div className="flex justify-between col-span-8 flex-row items-center md:order-3">
             <div className="flex flex-col items-end justify-center xl:items-center">
               <span className="inline-block font-bold text-7xl md:text-6xl sm:text-5xl xs:text-4xl">
                 <AnimateNumber value={50} />+

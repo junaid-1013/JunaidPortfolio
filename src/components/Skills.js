@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { SKILLS } from "@/config/constants";
+import { AnimatedText } from "./AnimatedText";
 
 export const Skill = ({ name, x, y }) => {
   return (
@@ -38,9 +39,11 @@ const fadeInAnimationVariants = {
 export const Skills = () => {
   return (
     <>
-      <h2 id="skills" className="w-full mt-28 font-bold text-center text-8xl md:text-6xl md:mt-32 ">
-        Skills
-      </h2>
+      <AnimatedText
+        id="skills"
+        text="Skills"
+        className="lg:!text-7xl sm:!text-6xl xs:!text-4xl my-20"
+      />
       {/* <div
         className="w-full h-screen relative flex items-center justify-center rounded-full bg-circularLight dark:bg-circularDark
             lg:h-[80vh] sm:h-[60vh] xs:h-[50vh]

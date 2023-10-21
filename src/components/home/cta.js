@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import { AnimatedText, Layout, LinkArrow, HireMe, ParticleContainer  } from "@/components";
+import { AnimatedText, Layout, LinkArrow, HireMe, ParticleContainer } from "@/components";
 
 export const CTA = () => {
   return (
@@ -30,15 +30,17 @@ export const CTA = () => {
           </div>
           <div className="flex flex-col items-center self-center w-1/2 lg:w-full lg:text-center">
             <AnimatedText
-              text="Turning Vision Into Reality With Code And Design."
-              className="!text-6xl !text-left 
-          xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl xm:!text-3xl
-          "
+              text="Hi, my name is"
+              className="!text-left !text-base !font-medium !md:text-sm !sm:text-xs"
             />
-            <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
-              As a skilled full-stack developer, I am dedicated to turning ideas
-              into innovative web applications. Explore my latest projects and
-              articles, showcasing my expertise in React.js and web development.
+            <AnimatedText
+              text="Junaid Ali"
+              className="!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl xm:!text-3xl"
+            />
+            <p className="my-4 text-base font-medium md:text-sm sm:text-xs text-justify">
+              I am a Computer Scientist with over 3 years of experience in various domains.
+              My expertise includes web and mobile app development, Machine Learning, AI, and computer vision.
+              I have also contributed to research projects.
             </p>
             <div className="flex items-center self-start mt-2 lg:self-center">
               <Link

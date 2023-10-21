@@ -7,6 +7,7 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import { EDUCATION_DATA } from "@/config/constants";
 import useThemeSwitcher from "@/hooks/useThemeSwitcher";
+import { AnimatedText } from "./AnimatedText";
 
 
 export const Education = () => {
@@ -18,9 +19,10 @@ export const Education = () => {
   });
   return (
     <div id="education" className="mt-28">
-      <h2 className="w-full mb-32 font-bold text-center text-8xl md:text-6xl xs:text-4xl md:mb-16">
-        Education
-      </h2>
+      <AnimatedText
+        text="Education"
+        className="lg:!text-7xl sm:!text-6xl xs:!text-4xl mb-16"
+      />
       <VerticalTimeline>
         {
           EDUCATION_DATA.map((education, i) => (
