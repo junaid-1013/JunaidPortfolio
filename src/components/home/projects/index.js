@@ -1,7 +1,22 @@
 import { AnimatedText, Layout } from "@/components";
 import FeaturedProjects from "./featured-projects";
-import ProjectCard from "./project-card";
-import { FEATURED_PROJECTS, PROJECTS } from "@/config/constants";
+import { FEATURED_PROJECTS} from "@/config/constants";
+import { motion } from "framer-motion";
+
+const fadeInAnimationVariants = {
+  initial: {
+    opacity: 0,
+    y: 100,
+  },
+  animate: (i) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 1,
+      delay: 0.05 * i,
+    }
+  }),
+}
 
 export const Projects = () => {
   return (
@@ -14,32 +29,29 @@ export const Projects = () => {
           text="My Work"
           className="mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl"
         />
-        <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
+        <div className="grid grid-cols-12 gap-24 gap-y-24 xl:gap-x-16 lg:gap-x-8 md:gap-y-20 sm:gap-x-0 px-16 xl:px-12 lg:px-10 md:px-8 sm:px-4 xs:px-0">
           {FEATURED_PROJECTS.map(
-            ({ github, img, link, summary, title, type }, i) => (
-              <div key={link + i} className="col-span-12">
+            ({ github, img, link, summary, title, tech }, i) => (
+              <motion.div key={link + i} className="col-span-12"
+                variants={fadeInAnimationVariants}
+                initial="initial"
+                whileInView="animate"
+                viewport={{
+                  once: true,
+                }}
+                custom={i}
+              >
                 <FeaturedProjects
                   title={title}
                   img={img}
                   summary={summary}
                   link={link}
                   github={github}
-                  type={type}
+                  tech={tech}
                 />
-              </div>
+              </motion.div>
             )
           )}
-          {PROJECTS.map(({ title, img, link, github, type }, i) => (
-            <div key={link + i} className="col-span-6 sm:col-span-12">
-              <ProjectCard
-                title={title}
-                img={img}
-                link={link}
-                github={github}
-                type={type}
-              />
-            </div>
-          ))}
         </div>
       </Layout>
     </section>

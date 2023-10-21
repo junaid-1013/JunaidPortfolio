@@ -1,32 +1,42 @@
 import React from "react";
 import { LuGraduationCap } from "react-icons/lu";
 
-export const PROJECTS = [
+export const FEATURED_PROJECTS = [
+  {
+    title: "Crop Sight",
+    img: "/images/projects/crop-sight.png",
+    summary:
+      "Crop Sight optimizes crop monitoring, improves yields, and minimizes seed and fertilizer expenses through precision farming, satellite data, machine learning.",
+    link: "https://cropsight-dusky.vercel.app/",
+    github: "https://github.com/junaid-1013",
+    tech: ["NextJs", "Django", "Python", "GEE", "Typescript", "Javacript"],
+  },
+  {
+    title: "Oeowo Technologies",
+    img: "/images/projects/oeowo.png",
+    summary:
+      "This is a web application for a marketing agency that offers a range of services, including various software solutions, digital marketing, branding, web application development, and mobile application development.",
+    link: "https://oeovo-technologies.vercel.app/",
+    github: "https://github.com/junaid-1013/oeovo-technologies",
+    tech: ["NextJs", "TypeScript", "Tailwind", "SCSS"],
+  },
+  {
+    title: "Kidney Stone Detection",
+    img: "/images/projects/kidney_stone_detection.png",
+    summary:
+      "The system will utilize image processing and computer vision techniques to analyze the CT images. The extracted features will be used to train CNN & SVM, to classify the images into positive and Negative.",
+    link: "https://github.com/junaid-1013/Kidney-Stone-Detection",
+    github: "https://github.com/junaid-1013/Kidney-Stone-Detection",
+    tech: ["Python", "Gradio"],
+  },
   {
     title: "Shop Management System",
     img: "/images/projects/shop_manag_system.png",
+    summary:
+      "Users can track inventory and sales records, create employees for product sales, and add,view, update, delete products. This system is developed in C# Windows Form with an MS SQL database.",
     link: "https://github.com/junaid-1013/Shop-Management-System",
     github: "https://github.com/junaid-1013/Shop-Management-System",
-    type: "Featured Project",
-  },
-  {
-    title: "Next Js Portfolio Website",
-    img: "/images/projects/next.js_portfolio.png",
-    link: "https://next-js-portfolio-website-omega.vercel.app/",
-    github: "https://github.com/junaid-1013/Next.js-Portfolio-Website",
-    type: "Featured Project",
-  },
-];
-
-export const FEATURED_PROJECTS = [
-  {
-    title: "Kidney Stone Detection",
-    img: "/images/projects/kidney_stone_detection.jpg",
-    summary:
-      "The system will utilize image processing and computer vision techniques, such as feature extraction and object detection, to analyze the images and detect abnormalities. The extracted features will be used to train machine learning algorithms, such as convolutional neural networks (CNNs) & SVmM, to classify the images into different categories based on the detected abnormalities. Tk inter Graphical User Interface(GUI) is used.",
-    link: "https://github.com/junaid-1013/Kidney-Stone-Detection",
-    github: "https://github.com/junaid-1013/Kidney-Stone-Detection",
-    type: "Featured Project",
+    tech: ["C# Win Forms", "MS SQL"],
   },
 ];
 
