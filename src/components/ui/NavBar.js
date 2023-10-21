@@ -161,13 +161,13 @@ export const NavBar = () => {
               toggle={handleClick}
             />
             <CustomMobileLink
-              href="/about"
+              href="#about"
               title="About"
               className=""
               toggle={handleClick}
             />
             <CustomMobileLink
-              href="/projects"
+              href="#projects"
               title="Projects"
               className=""
               toggle={handleClick}

@@ -1,3 +1,6 @@
+import React from "react";
+import { LuGraduationCap } from "react-icons/lu";
+
 export const PROJECTS = [
   {
     title: "Shop Management System",
@@ -30,5 +33,96 @@ export const FEATURED_PROJECTS = [
 export const NAV_LINKS = [
   { title: "Home", link: "#cta" },
   { title: "About", link: "#about" },
+  { title: "education", link: "#education" },
   { title: "Projects", link: "#projects" },
 ];
+
+export const SKILLS = [
+  {
+    img: "/images/skills/cpp.png",
+    title: "CPP"
+  },
+  {
+    img: "/images/skills/css.png",
+    title: "CSS"
+  },
+  {
+    img: "/images/skills/html.png",
+    title: "HTML"
+  },
+  {
+    img: "/images/skills/javascript.png",
+    title: "Javascript"
+  },
+  {
+    img: "/images/skills/react.png",
+    title: "React JS"
+  },
+  {
+    img: "/images/skills/nextjs.png",
+    title: "NextJS"
+  },
+  {
+    img: "/images/skills/typescript.png",
+    title: "Typescript"
+  },
+  {
+    img: "/images/skills/gee.png",
+    title: "GEE"
+  },
+  {
+    img: "/images/skills/git.png",
+    title: "GitHub"
+  },
+  {
+    img: "/images/skills/mongodb.png",
+    title: "Mongo DB"
+  },
+  {
+    img: "/images/skills/node.png",
+    title: "Node JS"
+  },
+  {
+    img: "/images/skills/python.png",
+    title: "Python"
+  },
+  {
+    img: "/images/skills/tailwind.png",
+    title: "Tailwind"
+  },
+  {
+    img: "/images/skills/sass.png",
+    title: "SCSS"
+  },
+]
+
+export const EDUCATION_DATA = [
+  {
+    title: "Bachelor of Science In Computer Science",
+    date: "2020-2024",
+    location: "COMSATS University Islamabad(CUI), Lahore Campus",
+    icon: React.createElement(LuGraduationCap),
+    info: "Relevant Courses included Data Structures and Algorithms, Computer Vision and Artificial Intelligence.",
+  },
+  {
+    title: "B.Sc-Mathematics",
+    date: "2017-2018",
+    location: "University of Punjab, Lahore",
+    icon: React.createElement(LuGraduationCap),
+    info: "Relevant Courses included Calculus, Mechanics and Mathematical Method.",
+  },
+  {
+    title: "F.Sc(pre-engineering)",
+    date: "2015-2016",
+    location: "Punjab Group of Colleges(PGC), New Muslim Town Lahore",
+    icon: React.createElement(LuGraduationCap),
+    info: "Relevant Courses included Chemistry, Physics and Mathematics.",
+  },
+  {
+    title: "Matric",
+    date: "2013-2014",
+    location: "Al-Farabi High School",
+    icon: React.createElement(LuGraduationCap),
+    info: "Relevant Courses included Biology, Chemistry, Physics and Mathematics.",
+  },
+]

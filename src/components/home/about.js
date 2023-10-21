@@ -118,7 +118,7 @@ export const About = () => {
           </div>
         </div>
         <Skills />
-        <Experience />
+        {/* <Experience /> */}
         <Education />
       </Layout>
     </section>

@@ -9,7 +9,7 @@ export const Projects = () => {
       id="projects"
       className="flex flex-col items-center justify-center w-full mb-16 dark:text-light"
     >
-      <Layout className="pt-16">
+      <Layout>
         <AnimatedText
           text="Imagination Trumps Knowledge!"
           className="mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl"

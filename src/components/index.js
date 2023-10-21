@@ -18,3 +18,4 @@ export { LiIcon } from "./LiIcon";
 export { Logo } from "./Logo";
 export { Skills } from "./Skills";
 export { TransitionEffect } from "./TransitionEffect";
+export { ParticleContainer } from "./ParticleContainer" 

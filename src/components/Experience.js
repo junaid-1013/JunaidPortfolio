@@ -49,7 +49,7 @@ export const Experience = () => {
     offset: ["start end", "center start"],
   });
   return (
-    <div className="my-64">
+    <div className="my-28">
       <h2 className="w-full mb-32 font-bold text-center text-8xl md:text-6xl xs:text-4xl md:mb-16">
         Experience
       </h2>
