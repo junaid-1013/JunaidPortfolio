@@ -68,7 +68,7 @@ export const CTA = () => {
           </div>
         </div>
       </Layout>
-      <HireMe />
+      {/* <HireMe /> */}
       {/* <div className="absolute inline-block w-24 right-8 bottom-8 md:hidden">
         <Image
           src="/images/svgs/miscellaneous_icons_1.svg"
