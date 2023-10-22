@@ -94,7 +94,7 @@ export const About = () => {
                 <AnimateNumber value={50} />+
               </span>
               <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
-                satisfied clinets
+                satisfied clients
               </h2>
             </div>
 
