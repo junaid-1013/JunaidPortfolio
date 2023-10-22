@@ -4,7 +4,7 @@ import Link from "next/link";
 
 import { AnimatedText, Layout, LinkArrow, HireMe, ParticleContainer } from "@/components";
 
-export const CTA = () => {
+export const CTA = ({themeMode, setThemeMode}) => {
   return (
     <main
       id="cta"
@@ -12,7 +12,7 @@ export const CTA = () => {
     >
       <Layout className="pt-0 md:pt-16 sm:pt-8">
         <div className="flex items-center justify-between w-full lg:flex-col">
-          <ParticleContainer />
+          <ParticleContainer themeMode={themeMode} setThemeMode={setThemeMode}/>
           <div
             className="w-1/3 md:w-full shadow-[0_25px_50px_8px_rgba(0,0,0,0.5)] 
         rounded-full border-3 border-solid border-gray-900"

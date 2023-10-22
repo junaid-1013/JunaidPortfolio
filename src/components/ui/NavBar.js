@@ -10,7 +10,7 @@ import {
   MoonIcon,
 } from "@/components";
 import { motion } from "framer-motion";
-import useThemeSwitcher from "@/hooks/useThemeSwitcher";
+
 import { NAV_LINKS } from "@/config/constants";
 
 const CustomLink = ({ href, title, className = "" }) => {
@@ -62,8 +62,7 @@ const CustomMobileLink = ({ href, title, className = "", toggle }) => {
   );
 };
 
-export const NavBar = () => {
-  const [mode, setMode] = useThemeSwitcher();
+export const NavBar = ({themeMode, setThemeMode}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleClick = () => {
@@ -130,13 +129,13 @@ export const NavBar = () => {
           </motion.a>
 
           <button
-            onClick={() => setMode(mode == "light" ? "dark" : "light")}
+            onClick={() => setThemeMode(themeMode == "light" ? "dark" : "light")}
             className={`flex items-center justify-center rounded-full p-1 ml-3
                 ${
-                  mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
+                  themeMode === "light" ? "bg-dark text-light" : "bg-light text-dark"
                 }`}
           >
-            {mode === "dark" ? (
+            {themeMode === "dark" ? (
               <SunIcon className={"fill-dark"} />
             ) : (
               <MoonIcon className={"fill-darl"} />
@@ -204,13 +203,13 @@ export const NavBar = () => {
             </motion.a>
 
             <button
-              onClick={() => setMode(mode == "light" ? "dark" : "light")}
+              onClick={() => setThemeMode(themeMode == "light" ? "dark" : "light")}
               className={`ml-3 flex items-center justify-center rounded-full p-1
                 ${
-                  mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
+                  themeMode === "light" ? "bg-dark text-light" : "bg-light text-dark"
                 }`}
             >
-              {mode === "dark" ? (
+              {themeMode === "dark" ? (
                 <SunIcon className={"fill-dark"} />
               ) : (
                 <MoonIcon className={"fill-darl"} />

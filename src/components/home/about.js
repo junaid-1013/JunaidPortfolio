@@ -34,7 +34,7 @@ const AnimateNumber = ({ value }) => {
   return <span ref={ref}></span>;
 };
 
-export const About = () => {
+export const About = ({themeMode, setThemeMode}) => {
   return (
     <section
       id="about"
@@ -119,7 +119,7 @@ export const About = () => {
         </div>
         <Skills />
         {/* <Experience /> */}
-        <Education />
+        <Education themeMode={themeMode} setThemeMode={setThemeMode}/>
       </Layout>
     </section>
   );

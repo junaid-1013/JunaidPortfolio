@@ -1,17 +1,14 @@
 import { Particles } from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
 import React, { useCallback } from 'react';
-import useThemeSwitcher from "@/hooks/useThemeSwitcher";
 
-
-export const ParticleContainer = () => {
+export const ParticleContainer = ({themeMode, setThemeMode}) => {
     const particlesInit = useCallback(async (engine) => {
         await loadFull(engine);
     }, []);
     const particlesLoaded = useCallback(async () => { }, []);
-    const [mode, setMode] = useThemeSwitcher();
-    const particleColor = mode === 'dark' ? '#f5f5f5' : '#1b1b1b'; 
-    const linkColor = mode === 'dark' ? '#dcdde1' : '#1b1b1b'; 
+    const particleColor = themeMode === 'dark' ? '#f5f5f5' : '#1b1b1b'; 
+    const linkColor = themeMode === 'dark' ? '#dcdde1' : '#1b1b1b'; 
     return (
         <Particles
             className='w-auto h-full absolute translate-z-0 -z-10'

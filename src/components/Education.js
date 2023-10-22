@@ -6,13 +6,11 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { EDUCATION_DATA } from "@/config/constants";
-import useThemeSwitcher from "@/hooks/useThemeSwitcher";
 import { AnimatedText } from "./AnimatedText";
 
 
-export const Education = () => {
+export const Education = ({themeMode, setThemeMode}) => {
   const ref = useRef(null);
-  const [theme, setTheme] = useThemeSwitcher();
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start end", "center start"],
@@ -30,7 +28,7 @@ export const Education = () => {
               <VerticalTimelineElement
                 contentStyle={{
                   background:
-                    theme === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)",
+                    themeMode === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)",
                   boxShadow: "none",
                   border: "1px solid rgba(0, 0, 0, 0.05)",
                   textAlign: "left",
@@ -38,7 +36,7 @@ export const Education = () => {
                 }}
                 contentArrowStyle={{
                   borderRight:
-                    theme === "light"
+                    themeMode === "light"
                       ? "0.4rem solid #9ca3af"
                       : "0.4rem solid rgba(255, 255, 255, 0.5)",
                 }}
@@ -46,7 +44,7 @@ export const Education = () => {
                 icon={education.icon}
                 iconStyle={{
                   background:
-                    theme === "light" ? "white" : "rgba(61, 61, 61)",
+                    themeMode === "light" ? "white" : "rgba(61, 61, 61)",
                   fontSize: "1.5rem",
                 }}
               >
