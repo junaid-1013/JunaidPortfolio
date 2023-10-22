@@ -12,7 +12,7 @@ const fadeInAnimationVariants = {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 1,
+      duration: 0.2,
       delay: 0.05 * i,
     }
   }),
@@ -48,6 +48,7 @@ export const Projects = () => {
                   link={link}
                   github={github}
                   tech={tech}
+                  index={i}
                 />
               </motion.div>
             )

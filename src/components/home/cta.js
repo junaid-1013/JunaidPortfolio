@@ -69,7 +69,7 @@ export const CTA = () => {
         </div>
       </Layout>
       <HireMe />
-      <div className="absolute inline-block w-24 right-8 bottom-8 md:hidden">
+      {/* <div className="absolute inline-block w-24 right-8 bottom-8 md:hidden">
         <Image
           src="/images/svgs/miscellaneous_icons_1.svg"
           width={100}
@@ -77,7 +77,7 @@ export const CTA = () => {
           alt="JunaidAli"
           className="w-full h-auto"
         />
-      </div>
+      </div> */}
     </main>
   );
 };

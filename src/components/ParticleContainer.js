@@ -34,7 +34,7 @@ export const ParticleContainer = () => {
                         },
                         onHover: {
                             enable: true,
-                            mode: 'repulse',
+                            mode: 'grab',//repulse or grab 
                         },
                         resize: true,
                     },
@@ -77,7 +77,7 @@ export const ParticleContainer = () => {
                             enable:true,
                             area:800
                         },
-                        value:80
+                        value:40
                     },
                     opacity:{
                         value:0.5,

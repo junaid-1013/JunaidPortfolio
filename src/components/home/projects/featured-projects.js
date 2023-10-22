@@ -7,11 +7,11 @@ import { LuExternalLink } from "react-icons/lu";
 
 const FramerLink = motion(Link);
 const FramerImage = motion(Image);
-const FeaturedProjects = ({ title, summary, img, link, github, tech }) => {
+const FeaturedProjects = ({ title, summary, img, link, github, tech, index }) => {
   return (
-    <article className="relative flex items-center justify-between w-full p-12 border border-solid shadow-2xl 
+    <article className={`relative flex ${index % 2 === 1 ? 'flex-row-reverse' : ''} items-center justify-between w-full p-12 border border-solid shadow-2xl 
     rounded-br-2xl rounded-3xl order-dark bg-light dark:bg-dark dark:border-dark lg:flex-col lg:p-8 
-    xs:rounded-2xl xs:rounded-br-3xl xs:p-4">
+    xs:rounded-2xl xs:rounded-br-3xl xs:p-4`}>
 
       <Link
         href={link}
@@ -42,7 +42,7 @@ const FeaturedProjects = ({ title, summary, img, link, github, tech }) => {
             {title}
           </h2>
         </Link>
-        <p className="py-2 font-medium text-dark dark:text-light sm:text-sm text-justify">
+        <p className={`py-2 font-medium text-dark dark:text-light sm:text-sm text-justify ${index % 2 === 1 ? 'pr-6 -pl-6 lg:pr-0 lg:pl-0' : ''} `}>
           {summary}
         </p>
         <div className="flex flex-wrap gap-x-4 gap-y-2">

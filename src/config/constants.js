@@ -12,7 +12,7 @@ export const FEATURED_PROJECTS = [
     tech: ["NextJs", "Django", "Python", "GEE", "Typescript", "Javacript"],
   },
   {
-    title: "Oeowo Technologies",
+    title: "Linetech Digital",
     img: "/images/projects/oeowo.png",
     summary:
       "This is a web application for a marketing agency that offers a range of services, including various software solutions, digital marketing, branding, web application development, and mobile application development.",
