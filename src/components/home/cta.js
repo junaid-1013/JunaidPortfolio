@@ -18,7 +18,7 @@ export const CTA = ({themeMode, setThemeMode}) => {
         rounded-full border-3 border-solid border-gray-900"
           >
             <Image
-              src="/images/profile/developer-pic-2.png"
+              src="/images/profile/developer-pic.png"
               width={70}
               height={100}
               alt="Junaid"
