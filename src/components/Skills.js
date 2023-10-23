@@ -38,9 +38,8 @@ const fadeInAnimationVariants = {
 
 export const Skills = () => {
   return (
-    <>
+    <div id="skills">
       <AnimatedText
-        id="skills"
         text="Skills"
         className="lg:!text-7xl sm:!text-6xl xs:!text-4xl my-20"
       />
@@ -95,6 +94,6 @@ export const Skills = () => {
           )
         )}
       </div>
-    </>
+    </div>
   );
 };
