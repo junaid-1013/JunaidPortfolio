@@ -119,7 +119,7 @@ export const NavBar = ({themeMode, setThemeMode}) => {
             <GithubIcon />
           </motion.a>
           <motion.a
-            href="https://www.linkedin.com/in/junaid-ali-34b680243/"
+            href="https://www.linkedin.com/in/junaid-ali-bhatti-34b680243/"
             target={"_blank"}
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
