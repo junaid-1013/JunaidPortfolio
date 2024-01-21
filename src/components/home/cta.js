@@ -44,7 +44,7 @@ export const CTA = ({themeMode, setThemeMode}) => {
             </p>
             <div className="flex items-center self-start mt-2 lg:self-center">
               <Link
-                href="/Junaid's CV.pdf"
+                href="/Junaid's Resume.pdf"
                 target={"_blank"}
                 className="flex items-center bg-dark text-light p-2.5 px-6 
             rounded-lg text-text-lg font-semibold

@@ -12,14 +12,41 @@ export const FEATURED_PROJECTS = [
     tech: ["NextJs", "Django", "Python", "GEE", "Typescript", "Javacript"],
   },
   {
-    title: "Linetech Digital",
-    img: "/images/projects/oeowo.png",
+    title: "NFT Arena",
+    img: "/images/projects/nftArena.png",
     summary:
-      "This is a web application for a marketing agency that offers a range of services, including various software solutions, digital marketing, branding, web application development, and mobile application development.",
-    link: "https://oeovo-technologies.vercel.app/",
-    github: "https://github.com/junaid-1013/oeovo-technologies",
-    tech: ["NextJs", "TypeScript", "Tailwind", "SCSS"],
+      "an NFT marketplace built with Nextjs & Ethereum, empowering creators & collectors in the digital renaissance.",
+    link: "https://my-nft-arena.vercel.app/",
+    github: "https://github.com/junaid-1013",
+    tech: ["NextJs", "Typescript", "Metamask", "Ethereum", "Cloudinary", "IPFS"],
   },
+  {
+    title: "Symptoms Sense",
+    img: "/images/projects/symptomsSense.png",
+    summary:
+      "Our Disease Prediction System uses medical data to personalize your health journey, with AI insights and easy doctor appointment booking for a proactive approach to health.",
+    link: "https://symptoms-sense.vercel.app/",
+    github: "https://github.com/junaid-1013",
+    tech: ["NextJs", "LangChain", "OpenAI", "Pinecone", "Typescript", "Cloudinary"],
+  },
+  {
+    title: "TEDx COMSATS",
+    img: "/images/projects/tedx.png",
+    summary:
+      "TEDxCOMSATS, built with NEXT.js 14 and TypeScript! This website brings the magic of TED Talks to Lahore, Pakistan, hosting inspiring speakers and sparking ideas worth spreading.",
+    link: "https://www.tedxcomsats.com/",
+    github: "https://github.com/junaid-1013",
+    tech: ["NextJs", "Typescript", "Framer Motion", "Tailwind"],
+  },
+  // {
+  //   title: "Linetech Digital",
+  //   img: "/images/projects/oeowo.png",
+  //   summary:
+  //     "This is a web application for a marketing agency that offers a range of services, including various software solutions, digital marketing, branding, web application development, and mobile application development.",
+  //   link: "https://oeovo-technologies.vercel.app/",
+  //   github: "https://github.com/junaid-1013/oeovo-technologies",
+  //   tech: ["NextJs", "TypeScript", "Tailwind", "SCSS"],
+  // },
   {
     title: "Kidney Stone Detection",
     img: "/images/projects/kidney_stone_detection.png",
