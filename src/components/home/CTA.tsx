@@ -1,7 +1,8 @@
 "use client";
-import { AnimatedText, Layout, LinkArrow, ParticleContainer } from "@/components";
+import { AnimatedText, Layout, ParticleContainer } from "@/components";
 import Image from "next/image";
 import Link from "next/link";
+import { LuExternalLink } from "react-icons/lu";
 
 export const CTA = () => {
     return (
@@ -49,11 +50,11 @@ export const CTA = () => {
                                 hover:bg-light hover:text-dark
                                 border-2 boder-solid border-transparent hover:border-dark
                                 dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light 
-                                hover:dark:border-light p-2 px-4 text-base"
+                                hover:dark:border-light p-2 px-4 text-base gap-x-2"
                                 download={true}
                             >
                                 Resume
-                                <LinkArrow className={"w-6 ml-1"} />
+                                <LuExternalLink size={20} />
                             </Link>
                             <Link
                                 href="mailto:junaid.ali101452@gmail.com"

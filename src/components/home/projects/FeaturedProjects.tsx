@@ -1,8 +1,8 @@
 "use client";
-import { GithubIcon } from "@/components/Icons";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { FaGithub } from "react-icons/fa";
 import { LuExternalLink } from "react-icons/lu";
 
 const FramerLink = motion(Link);
@@ -62,11 +62,11 @@ const FeaturedProjects = ({ title, summary, img, link, github, tech, index }: an
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
                     >
-                        <div className="flex gap-x-2 group">
+                        <div className="flex gap-x-2 group items-center">
                             <p className="py-2 font-medium text-dark dark:text-light text-sm sm:text-base group-hover:text-[#1B9CFC]">
                                 Code
                             </p>
-                            <GithubIcon className="w-6 group-hover:text-[#1B9CFC]" />
+                            <FaGithub size={15} className="group-hover:text-[#1B9CFC]" />
                         </div>
                     </FramerLink>
                     <FramerLink

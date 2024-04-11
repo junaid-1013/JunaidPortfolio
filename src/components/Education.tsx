@@ -43,7 +43,7 @@ export const Education = () => {
                                         themeMode === "light" ? "white" : "rgba(61, 61, 61)",
                                     fontSize: "1.5rem",
                                 }}
-                                visible={true}
+                                // visible={true}
                                 position={i % 2 === 0 ? "left" : "right"}
                             >
                                 <h3 className="font-semibold capitalize">{education.title}</h3>
