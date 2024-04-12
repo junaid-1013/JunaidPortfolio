@@ -1,8 +1,8 @@
 import { Footer, NavBar } from "@/components";
+import { ThemeSwitcherProvider } from "@/hooks/useThemeSwitcher";
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
-import { ThemeSwitcherProvider } from "@/hooks/useThemeSwitcher";
 
 const montserrat = Montserrat({
   subsets: ["latin"],

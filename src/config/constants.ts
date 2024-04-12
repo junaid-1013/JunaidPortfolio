@@ -1,5 +1,6 @@
 import React from "react";
 import { LuGraduationCap } from "react-icons/lu";
+import { ExperienceProps } from "./types";
 
 export const FEATURED_PROJECTS = [
   {
@@ -154,3 +155,56 @@ export const EDUCATION_DATA = [
     info: "Relevant Courses included Biology, Chemistry, Physics and Mathematics.",
   },
 ]
+
+export const EXPERIENCE_DATA: ExperienceProps[] = [
+  {
+    id: 'VitalGreen',
+    title: " Web Developer",
+    company: "Vital Green Ltd.",
+    label: 'VitalGreen',
+    period: "Jan 2024 - Present",
+    details: [
+      "Engaged as a NextJS developer, contributing to the development of robust system for agriculture monitoring solutions.",
+      "Leading the transformation of Crop-Sight into a practical agriculture monitoring product, focusing on revolutionizing farming practices in Pakistan through technology.",
+      "Specializing in precision farming techniques using utilizing machine learning, satellite imagery and remote sensing for farm management, crop monitoring, yield estimation, and resource optimization."
+    ]
+  },
+  {
+    id: 'LabEngineer',
+    title: "Lab Engineer",
+    company: "UMT",
+    label: 'UMT',
+    period: "June 2024 - present",
+    details: [
+      "Conducted and instructed programming and Web technologies labs for undergraduate Computer Science students at UMT.",
+      "Educated students on contemporary technology trends and their practical applications.",
+      "Supported the academic development of students in the School of Systems and Technology, Department of Computer Science."
+    ]
+  },
+  {
+    id: 'MLResearcher',
+    title: "Machine Learning Researcher",
+    company: "COMSATS",
+    label: 'COMSATS',
+    period: "Jan 2023 - Jan 2024",
+    duration: "Duration: 1 year 1 month",
+    details: [
+      "Experienced researcher specializing in remote sensing with a focus on integrating machine learning, deep learning, and time series analysis for a thesis project.",
+      "Proficient in React and Django development, complemented by advanced geospatial processing using Google Earth Engine.",
+      "Enthusiastic about leveraging cutting-edge technology and research insights to drive innovative solutions in the dynamic field of remote sensing."
+    ]
+  },
+  {
+    id: 'RA',
+    title: "Research Associate",
+    company: "COMSATS",
+    label: 'CUI',
+    period: "Feb 2024 - June 2024",
+    duration: "5 months",
+    details: [
+      "Delivered comprehensive lab sessions on C++ programming and Operating Systems to undergraduate students in Computer Science and Software Engineering.",
+      "Developed lab exercises and instructional materials, aligning with academic standards and industry practices.",
+      "Mentored students individually, providing personalized guidance to promote academic excellence."
+    ]
+  }
+];

@@ -1,17 +1,17 @@
 "use client";
 import { Dispatch, ReactNode, createContext, useContext, useEffect, useState } from "react";
 
-interface themeSwitcherType {
+interface ThemeSwitcherType {
     themeMode: string;
     setThemeMode: Dispatch<string>;
 }
 
-const ThemeContext = createContext<themeSwitcherType | undefined>(undefined);
+const ThemeContext = createContext<ThemeSwitcherType | undefined>(undefined);
 
 export function useThemeSwitcher() {
     const context = useContext(ThemeContext);
     if (!context) {
-        throw new Error("ThemeContext must be used within a ThemeSwitcherProvider");
+        throw new Error("useThemeSwitcher must be used within a ThemeSwitcherProvider");
     }
     return context;
 }
@@ -21,18 +21,32 @@ interface ThemeSwitcherProviderProps {
 }
 
 export function ThemeSwitcherProvider({ children }: ThemeSwitcherProviderProps) {
-    const preferDarkQuery = "(prefer-color-scheme: dark)";
-    const [themeMode, setThemeMode] = useState("light");
+    const preferDarkQuery = "(prefers-color-scheme: dark)";
+    const isBrowser = typeof window !== "undefined";
+
+    const [themeMode, setThemeMode] = useState(() => {
+        if (isBrowser) {
+            const storedTheme = localStorage.getItem("theme");
+            if (storedTheme) {
+                return storedTheme;
+            } else {
+                const mediaQuery = window.matchMedia(preferDarkQuery);
+                return mediaQuery.matches ? "dark" : "light";
+            }
+        }
+        return "light";
+    });
 
     useEffect(() => {
+        if (!isBrowser) return;
+
         const mediaQuery = window.matchMedia(preferDarkQuery);
-        const usePref = window.localStorage.getItem("theme");
 
         const handleChange = () => {
+            const usePref = localStorage.getItem("theme");
             if (usePref) {
-                const check = usePref === "dark" ? "dark" : "light";
-                setThemeMode(check);
-                document.documentElement.classList.toggle("dark", check === "dark");
+                setThemeMode(usePref);
+                document.documentElement.classList.toggle("dark", usePref === "dark");
             } else {
                 const check = mediaQuery.matches ? "dark" : "light";
                 setThemeMode(check);
@@ -44,21 +58,23 @@ export function ThemeSwitcherProvider({ children }: ThemeSwitcherProviderProps) 
         mediaQuery.addEventListener("change", handleChange);
 
         return () => mediaQuery.removeEventListener("change", handleChange);
-    }, []);
+    }, [isBrowser, preferDarkQuery]);
 
     useEffect(() => {
-        window.localStorage.setItem("theme", themeMode);
-        document.documentElement.classList.toggle("dark", themeMode === "dark");
-    }, [themeMode]);
+        if (isBrowser) {
+            localStorage.setItem("theme", themeMode);
+            document.documentElement.classList.toggle("dark", themeMode === "dark");
+        }
+    }, [themeMode, isBrowser]);
 
-    const ThemeSwitcherValue: themeSwitcherType = {
+    const themeSwitcherValue: ThemeSwitcherType = {
         themeMode,
         setThemeMode,
-    }
+    };
+
     return (
-        <ThemeContext.Provider value={ThemeSwitcherValue} >
+        <ThemeContext.Provider value={themeSwitcherValue}>
             {children}
         </ThemeContext.Provider>
     );
 };
-

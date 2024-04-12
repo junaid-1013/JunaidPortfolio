@@ -1,5 +1,5 @@
 "use client";
-import { Education, Layout, Skills } from "@/components";
+import { Education, Experience, Layout, Skills } from "@/components";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 import { useEffect, useRef } from "react";
 
@@ -54,7 +54,7 @@ export const About = () => {
                     </div>
                 </div>
                 <Skills />
-                {/* <Experience /> */}
+                <Experience />
                 <Education />
             </Layout>
         </section>
