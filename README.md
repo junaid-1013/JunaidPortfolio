@@ -1,22 +1,21 @@
 
 # JunaidPortfolio
 
-Welcome to the JunaidPortfolio repository! This project showcases my portfolio, built with modern web development practices. This is a personal portfolio project designed to display my skills, projects, and experience. It is built using Next.js and styled with Tailwind CSS.
+Welcome to the repository! This project showcases my portfolio, built with modern web development practices. This is a personal portfolio project designed to display my skills, projects, and experience. It is built using Next.js and styled with Tailwind CSS and Framer Motion.
 
 ## 🚨 Important Notice: Forking!
 
-Many people have contacted me asking if they can use this code for their own website, and the answer to that question is usually yes, with attribution.
+Many people have contacted me asking if they can use this code for their website, and the answer to that question is usually yes, with attribution.
 
-I value keeping my site open source, but as you all know, plagiarism is bad. It's always disheartening whenever I find that someone has copied my site without giving me credit. I spent a non-trivial amount of effort building and designing this iteration of my website, and I am proud of it! All I ask of you all is to not claim this effort as your own.
+I value keeping my site open source, but as you all know, plagiarism is bad. It's always disheartening to find that someone has copied my site without credit. I spent a lot of effort building and designing this iteration of my website, and I am proud of it! All I ask of you all is to not claim this effort as your own.
 
-**Please do not clone this repository. Instead, fork it so that you can make your own changes while still giving credit to the original author.**
+**Please do not clone this repository. Instead, fork it so you can make your changes while still giving credit to the original author.**
 
 ## Features
 
 - Responsive design
 - Modern UI/UX
 - Smooth animations
-- SEO optimized
 - Dark mode support
 
 ## Getting Started
@@ -30,32 +29,29 @@ Make sure you have Node.js and npm installed.
 ### Installation
 
 1. **Fork the repo**
+   [https://github.com/junaid-1013/JunaidPortfolio/fork](https://github.com/junaid-1013/JunaidPortfolio)
 
 2. Clone your forked repository
-
-   \`\`\`sh
+   ```bash
    git clone https://github.com/YOUR-USERNAME/JunaidPortfolio.git
-   \`\`\`
+   ```
 
 3. Navigate to the project directory
-
-   \`\`\`sh
+   ```bash
    cd JunaidPortfolio
-   \`\`\`
+   ```
 
 4. Install NPM packages
-
-   \`\`\`sh
+   ```bash
    npm install
-   \`\`\`
+   ```
 
 5. Run the development server
-
-   \`\`\`sh
+   ```bash
    npm run dev
-   \`\`\`
+   ```
 
-6. Open your browser and go to \`http://localhost:3000\`
+6. Open your browser and go to [http://localhost:3000](http://localhost:3000)
 
 ## Usage
 
@@ -66,9 +62,18 @@ This project can be used as a template for creating personal portfolios. Feel fr
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
 1. Fork the Project
-2. Create your Feature Branch (\`git checkout -b feature/AmazingFeature\`)
-3. Commit your Changes (\`git commit -m 'Add some AmazingFeature'\`)
-4. Push to the Branch (\`git push origin feature/AmazingFeature\`)
+2. Create your Feature Branch (
+   ```bash
+   git checkout -b feature/AmazingFeature
+   ```
+3. Commit your Changes 
+   ```bash
+   git commit -m 'Add some AmazingFeature'
+   ```
+4. Push to the Branch 
+   ```bash
+   git push origin feature/AmazingFeature
+   ```
 5. Open a Pull Request
 
 ## Credits
@@ -77,7 +82,7 @@ This portfolio was created by [Junaid Ali Bhatti](https://www.instagram.com/juna
 
 ## License
 
-Distributed under the MIT License. See \`LICENSE\` for more information.
+Distributed under the MIT License. See [LICENSE](https://github.com/junaid-1013/JunaidPortfolio/blob/main/LICENSE) for more information.
 
 ---
 
