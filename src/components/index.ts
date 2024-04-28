@@ -4,7 +4,6 @@ export { Experience } from "./Experience";
 export {
     CircularText,
     GithubIcon,
-    LinkArrow,
     LinkedInIcon,
     MoonIcon,
     SunIcon,

@@ -60,7 +60,7 @@ export const FEATURED_PROJECTS = [
 ];
 
 export const NAV_LINKS = [
-  { title: "Home", link: "#cta" },
+  { title: "Home", link: "/" },
   { title: "Skills", link: "#skills" },
   { title: "Education", link: "#education" },
   { title: "Projects", link: "#projects" },
@@ -68,20 +68,12 @@ export const NAV_LINKS = [
 
 export const SKILLS = [
   {
-    img: "/images/skills/cpp.png",
-    title: "CPP"
-  },
-  {
-    img: "/images/skills/css.png",
-    title: "CSS"
-  },
-  {
-    img: "/images/skills/html.png",
-    title: "HTML"
-  },
-  {
     img: "/images/skills/javascript.png",
     title: "Javascript"
+  },
+  {
+    img: "/images/skills/typescript.png",
+    title: "Typescript"
   },
   {
     img: "/images/skills/react.png",
@@ -90,10 +82,6 @@ export const SKILLS = [
   {
     img: "/images/skills/nextjs.png",
     title: "NextJS"
-  },
-  {
-    img: "/images/skills/typescript.png",
-    title: "Typescript"
   },
   {
     img: "/images/skills/gee.png",
@@ -116,12 +104,44 @@ export const SKILLS = [
     title: "Python"
   },
   {
+    img: "/images/skills/django.png",
+    title: "Django",
+  },
+  {
+    img: "/images/skills/pandas.png",
+    title: "Pandas",
+  },
+  {
+    img: "/images/skills/numpy.svg",
+    title: "Numpy",
+  },
+  {
+    img: "/images/skills/tensorflow.svg",
+    title: "TensorFlow",
+  },
+  {
+    img: "/images/skills/sql.png",
+    title: "SQL",
+  },
+  {
     img: "/images/skills/tailwind.png",
     title: "Tailwind"
   },
   {
     img: "/images/skills/sass.png",
     title: "SCSS"
+  },
+  {
+    img: "/images/skills/css.png",
+    title: "CSS"
+  },
+  {
+    img: "/images/skills/html.png",
+    title: "HTML"
+  },
+  {
+    img: "/images/skills/cpp.png",
+    title: "CPP"
   },
 ]
 

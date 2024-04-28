@@ -16,7 +16,7 @@ export const Education = () => {
                 text="Education"
                 className="lg:!text-8xl md:!text-7xl !text-6xl mb-16"
             />
-            <VerticalTimeline>
+            <VerticalTimeline lineColor="">
                 {
                     EDUCATION_DATA.map((education, i) => (
                         <div key={i}>

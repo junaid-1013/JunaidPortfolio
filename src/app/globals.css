@@ -4,5 +4,22 @@
 
 *,
 html {
+  --line-color: #e5e7eb;
   scroll-behavior: smooth !important;
+  scrollbar-width: thin;
+  scrollbar-color: var(--dark-slate) var(--navy);
+}
+html.dark {
+  --line-color: rgba(255, 255, 255, 0.2);
+}
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: var(--navy);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--dark-slate);
+  border: 3px solid var(--navy);
+  border-radius: 10px;
 }

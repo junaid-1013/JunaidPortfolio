@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+# JunaidPortfolio
+
+Welcome to the JunaidPortfolio repository! This project showcases my portfolio, built with modern web development practices. This is a personal portfolio project designed to display my skills, projects, and experience. It is built using Next.js and styled with Tailwind CSS.
+
+## 🚨 Important Notice: Forking!
+
+Many people have contacted me asking if they can use this code for their own website, and the answer to that question is usually yes, with attribution.
+
+I value keeping my site open source, but as you all know, plagiarism is bad. It's always disheartening whenever I find that someone has copied my site without giving me credit. I spent a non-trivial amount of effort building and designing this iteration of my website, and I am proud of it! All I ask of you all is to not claim this effort as your own.
+
+**Please do not clone this repository. Instead, fork it so that you can make your own changes while still giving credit to the original author.**
+
+## Features
+
+- Responsive design
+- Modern UI/UX
+- Smooth animations
+- SEO optimized
+- Dark mode support
 
 ## Getting Started
 
-First, run the development server:
+To get a local copy up and running, follow these simple steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Prerequisites
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Make sure you have Node.js and npm installed.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. **Fork the repo**
 
-## Learn More
+2. Clone your forked repository
 
-To learn more about Next.js, take a look at the following resources:
+   \`\`\`sh
+   git clone https://github.com/YOUR-USERNAME/JunaidPortfolio.git
+   \`\`\`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Navigate to the project directory
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   \`\`\`sh
+   cd JunaidPortfolio
+   \`\`\`
 
-## Deploy on Vercel
+4. Install NPM packages
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   \`\`\`sh
+   npm install
+   \`\`\`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+5. Run the development server
+
+   \`\`\`sh
+   npm run dev
+   \`\`\`
+
+6. Open your browser and go to \`http://localhost:3000\`
+
+## Usage
+
+This project can be used as a template for creating personal portfolios. Feel free to explore the code and customize it to fit your needs.
+
+## Contributing
+
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (\`git checkout -b feature/AmazingFeature\`)
+3. Commit your Changes (\`git commit -m 'Add some AmazingFeature'\`)
+4. Push to the Branch (\`git push origin feature/AmazingFeature\`)
+5. Open a Pull Request
+
+## Credits
+
+This portfolio was created by [Junaid Ali Bhatti](https://www.instagram.com/junaid.ali1014/). If you use this project or a fork of it, please give credit to the original author.
+
+## License
+
+Distributed under the MIT License. See \`LICENSE\` for more information.
+
+---
+
+Feel free to further customize this template to fit your specific needs and add any additional sections that are relevant to your project.

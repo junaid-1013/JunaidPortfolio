@@ -9,9 +9,9 @@ const FramerLink = motion(Link);
 const FramerImage = motion(Image);
 const FeaturedProjects = ({ title, summary, img, link, github, tech, index }: any) => {
     return (
-        <article className={`relative flex ${index % 2 === 1 ? 'flex-row-reverse' : ''} items-center 
+        <article className={`relative flex ${index % 2 === 1 ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center 
         justify-between w-full lg:p-12 border border-solid shadow-2xl 
-        sm:rounded-br-2xl sm:rounded-3xl bg-light dark:bg-dark dark:border-dark flex-col sm:p-8 lg:flex-row
+        sm:rounded-br-2xl sm:rounded-3xl bg-light dark:bg-dark dark:border-dark flex-col sm:p-8
         rounded-2xl rounded-br-3xl p-4`}>
             <Link
                 href={link}
