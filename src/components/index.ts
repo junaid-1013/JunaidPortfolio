@@ -6,8 +6,7 @@ export {
     GithubIcon,
     LinkedInIcon,
     MoonIcon,
-    SunIcon,
-    TwitterIcon
+    SunIcon
 } from "./Icons";
 export { Logo } from "./Logo";
 export { ParticleContainer } from "./ParticleContainer";

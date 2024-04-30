@@ -7,3 +7,7 @@ export interface ExperienceProps {
     duration?: string;
     details: string[];
 }
+export interface SocialLinksType {
+    href: string;
+    Icon: any
+}

@@ -82,7 +82,7 @@ This portfolio was created by [Junaid Ali Bhatti](https://www.instagram.com/juna
 
 ## License
 
-Distributed under the MIT License. See [LICENSE](https://github.com/junaid-1013/JunaidPortfolio/blob/main/LICENSE) for more information.
+Distributed under the MIT License. See [LICENSE](https://github.com/junaid-1013/JunaidPortfolio?tab=MIT-1-ov-file) for more information.
 
 ---
 

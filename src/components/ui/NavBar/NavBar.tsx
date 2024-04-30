@@ -1,13 +1,10 @@
 "use client"
 import {
-    GithubIcon,
-    LinkedInIcon,
     MoonIcon,
-    SunIcon,
-    TwitterIcon,
+    SunIcon
 } from "@/components";
 import { Logo } from "@/components/Logo";
-import { NAV_LINKS } from "@/config/constants";
+import { NAV_LINKS, SOCIAL_LINKS } from "@/config/constants";
 import { useThemeSwitcher } from "@/hooks/useThemeSwitcher";
 import { motion } from "framer-motion";
 import { useState } from "react";
@@ -54,33 +51,18 @@ export const NavBar = () => {
                 </nav>
 
                 <nav className="flex flex-wrap items-center justify-center">
-                    <motion.a
-                        href="https://twitter.com/junaidali1014"
-                        target={"_blank"}
-                        whileHover={{ y: -2 }}
-                        whileTap={{ scale: 0.9 }}
-                        className="w-6 mr-3"
-                    >
-                        <TwitterIcon />
-                    </motion.a>
-                    <motion.a
-                        href="https://github.com/junaid-1013"
-                        target={"_blank"}
-                        whileHover={{ y: -2 }}
-                        whileTap={{ scale: 0.9 }}
-                        className="w-6 mx-3"
-                    >
-                        <GithubIcon />
-                    </motion.a>
-                    <motion.a
-                        href="https://www.linkedin.com/in/junaid-ali-bhatti-34b680243/"
-                        target={"_blank"}
-                        whileHover={{ y: -2 }}
-                        whileTap={{ scale: 0.9 }}
-                        className="w-6 mx-3"
-                    >
-                        <LinkedInIcon />
-                    </motion.a>
+                    {SOCIAL_LINKS.map(({ href, Icon }, i) => (
+                        <motion.a
+                            key={i}
+                            href={href}
+                            target={"_blank"}
+                            whileHover={{ y: -2 }}
+                            whileTap={{ scale: 0.9 }}
+                            className="w-6 mx-3"
+                        >
+                            {Icon}
+                        </motion.a>
+                    ))}
 
                     <button
                         onClick={() => setThemeMode(themeMode == "light" ? "dark" : "light")}
@@ -106,60 +88,35 @@ export const NavBar = () => {
             "
                 >
                     <nav className="flex flex-col items-center justify-center">
-                        <CustomMobileLink
-                            href="/"
-                            title="Home"
-                            className=""
-                            toggle={handleClick}
-                        />
-                        <CustomMobileLink
-                            href="#about"
-                            title="About"
-                            className=""
-                            toggle={handleClick}
-                        />
-                        <CustomMobileLink
-                            href="#projects"
-                            title="Projects"
-                            className=""
-                            toggle={handleClick}
-                        />
+                        {NAV_LINKS.map(({ link, title }, i) => (
+                            <CustomMobileLink
+                                key={link + i}
+                                href={link}
+                                title={title}
+                                toggle={handleClick}
+                            />
+                        ))}
+
                     </nav>
 
                     <nav className="flex flex-wrap items-center justify-center mt-2">
-                        <motion.a
-                            href="https://twitter.com/junaidali1014"
-                            target={"_blank"}
-                            whileHover={{ y: -2 }}
-                            whileTap={{ scale: 0.9 }}
-                            className="w-6 sm:mr-3 mx-1"
-                        >
-                            <TwitterIcon />
-                        </motion.a>
-                        <motion.a
-                            href="https://github.com/junaid-1013"
-                            target={"_blank"}
-                            whileHover={{ y: -2 }}
-                            whileTap={{ scale: 0.9 }}
-                            className="w-6 sm:mx-3 rounded-full mx-1 bg-light dark:bg-dark"
-                        >
-                            <GithubIcon />
-                        </motion.a>
-                        <motion.a
-                            href="https://www.linkedin.com/in/junaid-ali-34b680243/"
-                            target={"_blank"}
-                            whileHover={{ y: -2 }}
-                            whileTap={{ scale: 0.9 }}
-                            className="w-6 sm:ml-3 mx-1"
-                        >
-                            <LinkedInIcon />
-                        </motion.a>
-
+                        {SOCIAL_LINKS.map(({ href, Icon }, i) => (
+                            <motion.a
+                                key={i}
+                                href={href}
+                                target={"_blank"}
+                                whileHover={{ y: -2 }}
+                                whileTap={{ scale: 0.9 }}
+                                className={`w-6 sm:mr-3 mx-1 ${href == "https://github.com/junaid-1013" ? "rounded-full bg-light dark:bg-dark" : ""}`}
+                            >
+                                {Icon}
+                            </motion.a>
+                        ))}
                         <button
                             onClick={() => setThemeMode(themeMode == "light" ? "dark" : "light")}
                             className={`ml-3 flex items-center justify-center rounded-full p-1
-                ${themeMode === "light" ? "bg-dark text-light" : "bg-light text-dark"
-                                }`}
+                            ${themeMode === "light" ? "bg-dark text-light" : "bg-light text-dark"}
+                            `}
                         >
                             {themeMode === "dark" ? (
                                 <SunIcon className={"fill-dark"} />

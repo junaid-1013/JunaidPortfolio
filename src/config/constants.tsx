@@ -1,7 +1,10 @@
+import {
+  GithubIcon,
+  LinkedInIcon
+} from "@/components";
 import React from "react";
 import { LuGraduationCap } from "react-icons/lu";
-import { ExperienceProps } from "./types";
-
+import { ExperienceProps, SocialLinksType } from "./types";
 export const FEATURED_PROJECTS = [
   {
     title: "Crop Sight",
@@ -58,14 +61,16 @@ export const FEATURED_PROJECTS = [
     tech: ["C# Win Forms", "MS SQL"],
   },
 ];
-
 export const NAV_LINKS = [
   { title: "Home", link: "/" },
   { title: "Skills", link: "#skills" },
   { title: "Education", link: "#education" },
   { title: "Projects", link: "#projects" },
 ];
-
+export const SOCIAL_LINKS: SocialLinksType[] = [
+  { href: "https://github.com/junaid-1013", Icon: <GithubIcon /> },
+  { href: "https://www.linkedin.com/in/junaid-ali-34b680243/", Icon: <LinkedInIcon /> },
+];
 export const SKILLS = [
   {
     img: "/images/skills/javascript.png",
@@ -144,7 +149,6 @@ export const SKILLS = [
     title: "CPP"
   },
 ]
-
 export const EDUCATION_DATA = [
   {
     title: "Bachelor of Science In Computer Science",
@@ -175,7 +179,6 @@ export const EDUCATION_DATA = [
     info: "Relevant Courses included Biology, Chemistry, Physics and Mathematics.",
   },
 ]
-
 export const EXPERIENCE_DATA: ExperienceProps[] = [
   {
     id: 'VitalGreen',
