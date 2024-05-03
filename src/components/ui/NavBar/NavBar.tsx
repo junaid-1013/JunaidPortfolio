@@ -58,7 +58,7 @@ export const NavBar = () => {
                             target={"_blank"}
                             whileHover={{ y: -2 }}
                             whileTap={{ scale: 0.9 }}
-                            className="w-6 mx-3"
+                            className={`w-6 mx-3 ${href == "https://www.linkedin.com/in/junaid-ali-34b680243/" ? "bg-light" : ""} `}
                         >
                             {Icon}
                         </motion.a>
@@ -107,7 +107,8 @@ export const NavBar = () => {
                                 target={"_blank"}
                                 whileHover={{ y: -2 }}
                                 whileTap={{ scale: 0.9 }}
-                                className={`w-6 sm:mr-3 mx-1 ${href == "https://github.com/junaid-1013" ? "rounded-full bg-light dark:bg-dark" : ""}`}
+                                className={`w-6 sm:mr-3 mx-1 ${href == "https://www.linkedin.com/in/junaid-ali-34b680243/" ? "bg-light" : ""} 
+                                ${href == "https://github.com/junaid-1013" ? "rounded-full bg-light dark:bg-dark" : ""}`}
                             >
                                 {Icon}
                             </motion.a>

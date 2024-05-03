@@ -1,10 +1,8 @@
-import {
-  GithubIcon,
-  LinkedInIcon
-} from "@/components";
 import React from "react";
 import { LuGraduationCap } from "react-icons/lu";
 import { ExperienceProps, SocialLinksType } from "./types";
+import { BsLinkedin } from "react-icons/bs";
+import { IoLogoGithub } from "react-icons/io";
 export const FEATURED_PROJECTS = [
   {
     title: "Crop Sight",
@@ -68,8 +66,8 @@ export const NAV_LINKS = [
   { title: "Projects", link: "#projects" },
 ];
 export const SOCIAL_LINKS: SocialLinksType[] = [
-  { href: "https://github.com/junaid-1013", Icon: <GithubIcon /> },
-  { href: "https://www.linkedin.com/in/junaid-ali-34b680243/", Icon: <LinkedInIcon /> },
+  { href: "https://github.com/junaid-1013", Icon: <IoLogoGithub size={25} /> },
+  { href: "https://www.linkedin.com/in/junaid-ali-34b680243/", Icon: <BsLinkedin size={25} color="#0a66c2" /> },
 ];
 export const SKILLS = [
   {
