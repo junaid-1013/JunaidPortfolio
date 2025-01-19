@@ -58,7 +58,7 @@ export const NavBar = () => {
                             target={"_blank"}
                             whileHover={{ y: -2 }}
                             whileTap={{ scale: 0.9 }}
-                            className={`w-6 mx-3 ${href == "https://www.linkedin.com/in/junaid-ali-34b680243/" ? "bg-light" : ""} `}
+                            className={`w-6 mx-3 ${href == "https://www.linkedin.com/in/junaid-ali-bhatti-34b680243/" ? "bg-light" : ""} `}
                         >
                             {Icon}
                         </motion.a>

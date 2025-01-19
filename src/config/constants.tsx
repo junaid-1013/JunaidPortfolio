@@ -9,7 +9,7 @@ export const FEATURED_PROJECTS = [
     img: "/images/projects/crop-sight.png",
     summary:
       "Crop Sight optimizes crop monitoring, improves yields, and minimizes seed and fertilizer expenses through precision farming, satellite data, machine learning.",
-    link: "http://smartaisolutions.net:3000/",
+    link: "https://smartaisolutions.net/",
     github: "https://github.com/junaid-1013",
     tech: ["NextJs", "Django", "Python", "GEE", "Typescript", "Javacript"],
   },
@@ -36,7 +36,7 @@ export const FEATURED_PROJECTS = [
     img: "/images/projects/tedx.png",
     summary:
       "TEDxCOMSATS, built with NEXT.js 14 and TypeScript! This website brings the magic of TED Talks to Lahore, Pakistan, hosting inspiring speakers and sparking ideas worth spreading.",
-    link: "https://www.tedxcomsats.com/",
+    link: "https://tedxcomsatslhr.vercel.app/",
     github: "https://github.com/junaid-1013",
     tech: ["NextJs", "Typescript", "Framer Motion", "Tailwind"],
   },
@@ -89,6 +89,10 @@ export const SKILLS = [
   {
     img: "/images/skills/gee.png",
     title: "GEE"
+  },
+  {
+    img: "/images/skills/sentinelHub.png",
+    title: "Sentinel Hub"
   },
   {
     img: "/images/skills/git.png",
@@ -146,8 +150,19 @@ export const SKILLS = [
     img: "/images/skills/cpp.png",
     title: "CPP"
   },
+  {
+    img: "/images/skills/maya.png",
+    title: "AutoDesk Maya"
+  },
 ]
 export const EDUCATION_DATA = [
+  {
+    title: "Master of Science In Computer Science",
+    date: "2024-Present",
+    location: "COMSATS University Islamabad(CUI), Lahore Campus",
+    icon: React.createElement(LuGraduationCap),
+    info: "Relevant Courses included Advance Computer Vision, Pattern Recognition, Machine Learning and AI.",
+  },
   {
     title: "Bachelor of Science In Computer Science",
     date: "2020-2024",
@@ -162,20 +177,20 @@ export const EDUCATION_DATA = [
     icon: React.createElement(LuGraduationCap),
     info: "Relevant Courses included Calculus, Mechanics and Mathematical Method.",
   },
-  {
-    title: "F.Sc(pre-engineering)",
-    date: "2015-2016",
-    location: "Punjab Group of Colleges(PGC), New Muslim Town Lahore",
-    icon: React.createElement(LuGraduationCap),
-    info: "Relevant Courses included Chemistry, Physics and Mathematics.",
-  },
-  {
-    title: "Matric",
-    date: "2013-2014",
-    location: "Al-Farabi High School",
-    icon: React.createElement(LuGraduationCap),
-    info: "Relevant Courses included Biology, Chemistry, Physics and Mathematics.",
-  },
+  // {
+  //   title: "F.Sc(pre-engineering)",
+  //   date: "2015-2016",
+  //   location: "Punjab Group of Colleges(PGC), New Muslim Town Lahore",
+  //   icon: React.createElement(LuGraduationCap),
+  //   info: "Relevant Courses included Chemistry, Physics and Mathematics.",
+  // },
+  // {
+  //   title: "Matric",
+  //   date: "2013-2014",
+  //   location: "Al-Farabi High School",
+  //   icon: React.createElement(LuGraduationCap),
+  //   info: "Relevant Courses included Biology, Chemistry, Physics and Mathematics.",
+  // },
 ]
 export const EXPERIENCE_DATA: ExperienceProps[] = [
   {
@@ -203,6 +218,19 @@ export const EXPERIENCE_DATA: ExperienceProps[] = [
     ]
   },
   {
+    id: 'RA',
+    title: "Research Associate",
+    company: "COMSATS",
+    label: 'CUI',
+    period: "Feb 2024 - Jan 2025",
+    duration: "5 months",
+    details: [
+      "Delivered comprehensive lab sessions on C++ programming and Operating Systems to undergraduate students in Computer Science and Software Engineering.",
+      "Developed lab exercises and instructional materials, aligning with academic standards and industry practices.",
+      "Mentored students individually, providing personalized guidance to promote academic excellence."
+    ]
+  },
+  {
     id: 'MLResearcher',
     title: "Machine Learning Researcher",
     company: "COMSATS",
@@ -215,17 +243,4 @@ export const EXPERIENCE_DATA: ExperienceProps[] = [
       "Enthusiastic about leveraging cutting-edge technology and research insights to drive innovative solutions in the dynamic field of remote sensing."
     ]
   },
-  {
-    id: 'RA',
-    title: "Research Associate",
-    company: "COMSATS",
-    label: 'CUI',
-    period: "Feb 2024 - June 2024",
-    duration: "5 months",
-    details: [
-      "Delivered comprehensive lab sessions on C++ programming and Operating Systems to undergraduate students in Computer Science and Software Engineering.",
-      "Developed lab exercises and instructional materials, aligning with academic standards and industry practices.",
-      "Mentored students individually, providing personalized guidance to promote academic excellence."
-    ]
-  }
 ];
