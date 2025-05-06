@@ -170,13 +170,13 @@ export const EDUCATION_DATA = [
     icon: React.createElement(LuGraduationCap),
     info: "Relevant Courses included Data Structures and Algorithms, Computer Vision and Artificial Intelligence.",
   },
-  {
-    title: "B.Sc-Mathematics",
-    date: "2017-2018",
-    location: "University of Punjab, Lahore",
-    icon: React.createElement(LuGraduationCap),
-    info: "Relevant Courses included Calculus, Mechanics and Mathematical Method.",
-  },
+  // {
+  //   title: "B.Sc-Mathematics",
+  //   date: "2017-2018",
+  //   location: "University of Punjab, Lahore",
+  //   icon: React.createElement(LuGraduationCap),
+  //   info: "Relevant Courses included Calculus, Mechanics and Mathematical Method.",
+  // },
   // {
   //   title: "F.Sc(pre-engineering)",
   //   date: "2015-2016",
@@ -193,6 +193,17 @@ export const EDUCATION_DATA = [
   // },
 ]
 export const EXPERIENCE_DATA: ExperienceProps[] = [
+  {
+    id: 'LogicFinder',
+    title: "Full Stack Developer",
+    company: "Logic Finder",
+    label: 'LogicFinder',
+    period: "Mar 2025 - Present",
+    details: [
+      "Developed and optimized Network Fort , a cybersecurity dashboard, using NextJS and SSE for real-time threat visualization.",
+      "Designed secure REST APIs with Elasticsearch integration to enhance threat detection efficiency.",
+    ]
+  },
   {
     id: 'VitalGreen',
     title: " Web Developer",
@@ -222,8 +233,8 @@ export const EXPERIENCE_DATA: ExperienceProps[] = [
     title: "Research Associate",
     company: "COMSATS",
     label: 'CUI',
-    period: "Feb 2024 - Jan 2025",
-    duration: "5 months",
+    period: "Feb 2024 - April 2025",
+    duration: "1 Year 2 months",
     details: [
       "Delivered comprehensive lab sessions on C++ programming and Operating Systems to undergraduate students in Computer Science and Software Engineering.",
       "Developed lab exercises and instructional materials, aligning with academic standards and industry practices.",
@@ -236,7 +247,7 @@ export const EXPERIENCE_DATA: ExperienceProps[] = [
     company: "COMSATS",
     label: 'COMSATS',
     period: "Jan 2023 - Jan 2024",
-    duration: "Duration: 1 year 1 month",
+    duration: "1 year 1 month",
     details: [
       "Experienced researcher specializing in remote sensing with a focus on integrating machine learning, deep learning, and time series analysis for a thesis project.",
       "Proficient in React and Django development, complemented by advanced geospatial processing using Google Earth Engine.",
