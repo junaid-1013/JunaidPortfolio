@@ -1,8 +1,8 @@
 import React from "react";
-import { LuGraduationCap } from "react-icons/lu";
-import { ExperienceProps, SocialLinksType } from "./types";
 import { BsLinkedin } from "react-icons/bs";
 import { IoLogoGithub } from "react-icons/io";
+import { LuGraduationCap } from "react-icons/lu";
+import { ExperienceProps, SocialLinksType } from "./types";
 export const FEATURED_PROJECTS = [
   {
     title: "Crop Sight",
@@ -19,7 +19,7 @@ export const FEATURED_PROJECTS = [
     summary:
       "an NFT marketplace built with Nextjs & Ethereum, empowering creators & collectors in the digital renaissance.",
     link: "https://my-nft-arena.vercel.app/",
-    github: "https://github.com/junaid-1013",
+    github: "https://github.com/junaid-1013/NFT-Arena",
     tech: ["NextJs", "Typescript", "Metamask", "Ethereum", "Cloudinary", "IPFS"],
   },
   {
@@ -194,14 +194,15 @@ export const EDUCATION_DATA = [
 ]
 export const EXPERIENCE_DATA: ExperienceProps[] = [
   {
-    id: 'LogicFinder',
-    title: "Full Stack Developer",
-    company: "Logic Finder",
-    label: 'LogicFinder',
-    period: "Mar 2025 - Present",
+    id: 'SmartAISolutions',
+    title: "Software Engineer",
+    company: "Smart A & I Solutions",
+    label: 'SmartAISolutions',
+    period: "Sep 2025 - present",
     details: [
-      "Developed and optimized Network Fort , a cybersecurity dashboard, using NextJS and SSE for real-time threat visualization.",
-      "Designed secure REST APIs with Elasticsearch integration to enhance threat detection efficiency.",
+      "Led multiple projects and development teams, overseeing task planning, execution, and delivery.",
+      "Drove LLM integration in production web applications using LangGraph, enabling intelligent and scalable AI workflows.",
+      "Architected and delivered full-stack solutions using Python (FastAPI) and Next.js, with active PR reviews and technical mentorship."
     ]
   },
   {
@@ -209,7 +210,8 @@ export const EXPERIENCE_DATA: ExperienceProps[] = [
     title: " Web Developer",
     company: "Vital Green Ltd.",
     label: 'VitalGreen',
-    period: "Jan 2023 - Present",
+    period: "Jan 2023 - Aug 2025",
+    duration: "2 Year 8 months",
     details: [
       "Engaged as a NextJS developer, contributing to the development of robust system for agriculture monitoring solutions.",
       "Leading the transformation of Crop-Sight into a practical agriculture monitoring product, focusing on revolutionizing farming practices in Pakistan through technology.",
@@ -221,7 +223,7 @@ export const EXPERIENCE_DATA: ExperienceProps[] = [
     title: "Lab Engineer",
     company: "UMT",
     label: 'UMT',
-    period: "June 2024 - July 2025",
+    period: "Jun 2024 - Jul 2025",
     duration: "1 Year 2 months",
     details: [
       "Conducted and instructed programming and Web technologies labs for undergraduate Computer Science students at UMT.",
@@ -230,11 +232,23 @@ export const EXPERIENCE_DATA: ExperienceProps[] = [
     ]
   },
   {
+    id: 'LogicFinder',
+    title: "Full Stack Developer",
+    company: "Logic Finder",
+    label: 'LogicFinder',
+    period: "Mar 2025 - Jun 2025",
+    duration: "4 months",
+    details: [
+      "Developed and optimized Network Fort , a cybersecurity dashboard, using NextJS and SSE for real-time threat visualization.",
+      "Designed secure REST APIs with Elasticsearch integration to enhance threat detection efficiency.",
+    ]
+  },
+  {
     id: 'RA',
     title: "Research Associate",
     company: "COMSATS",
     label: 'COMSATS',
-    period: "Feb 2024 - June 2025",
+    period: "Feb 2024 - Jun 2025",
     duration: "1 Year 5 months",
     details: [
       "Delivered comprehensive lab sessions on C++ programming and Operating Systems to undergraduate students in Computer Science and Software Engineering.",
