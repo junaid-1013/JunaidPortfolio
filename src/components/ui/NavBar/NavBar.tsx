@@ -7,13 +7,18 @@ import { Logo } from "@/components/Logo";
 import { NAV_LINKS, SOCIAL_LINKS } from "@/config/constants";
 import { useThemeSwitcher } from "@/hooks/useThemeSwitcher";
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import CustomLink from "./CustomLink";
 import CustomMobileLink from "./CustomMobileLink";
 
 export const NavBar = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [mounted, setMounted] = useState(false);
     const { themeMode, setThemeMode } = useThemeSwitcher();
+
+    useEffect(() => {
+        setMounted(true);
+    }, []);
 
     const handleClick = () => {
         setIsOpen(!isOpen);
@@ -70,11 +75,11 @@ export const NavBar = () => {
                 ${themeMode === "light" ? "bg-dark text-light" : "bg-light text-dark"
                             }`}
                     >
-                        {themeMode === "dark" ? (
+                        {mounted && (themeMode === "dark" ? (
                             <SunIcon className={"fill-dark"} />
                         ) : (
-                            <MoonIcon className={"fill-darl"} />
-                        )}
+                            <MoonIcon className={"fill-dark"} />
+                        ))}
                     </button>
                 </nav>
             </div>
@@ -119,11 +124,11 @@ export const NavBar = () => {
                             ${themeMode === "light" ? "bg-dark text-light" : "bg-light text-dark"}
                             `}
                         >
-                            {themeMode === "dark" ? (
+                            {mounted && (themeMode === "dark" ? (
                                 <SunIcon className={"fill-dark"} />
                             ) : (
-                                <MoonIcon className={"fill-darl"} />
-                            )}
+                                <MoonIcon className={"fill-dark"} />
+                            ))}
                         </button>
                     </nav>
                 </motion.div>

@@ -30,7 +30,7 @@ const AnimateNumber = ({ value }: { value: number }) => {
 export const About = () => {
     const data = [
         { value: 150, text: "satisfied clients" },
-        { value: 20, text: "projects completed" },
+        { value: 50, text: "projects completed" },
         { value: 3, text: "years of experience" },
     ];
     return (
