@@ -1,13 +1,26 @@
 "use client";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 const CustomMobileLink = ({ href, title, className = "", toggle }: any) => {
     const pathname = usePathname();
+    const router = useRouter();
 
     const handleClick = (e: any) => {
         e.preventDefault();
         toggle();
+        
+        // Handle hash links differently
+        if (href.startsWith('#')) {
+            setTimeout(() => {
+                const element = document.querySelector(href);
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                }
+            }, 100);
+        } else {
+            router.push(href);
+        }
     };
 
     return (

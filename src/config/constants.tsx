@@ -67,7 +67,7 @@ export const NAV_LINKS = [
 ];
 export const SOCIAL_LINKS: SocialLinksType[] = [
   { href: "https://github.com/junaid-1013", Icon: <IoLogoGithub size={25} /> },
-  { href: "https://www.linkedin.com/in/junaid-ali-34b680243/", Icon: <BsLinkedin size={25} color="#0a66c2" /> },
+  { href: "https://www.linkedin.com/in/junaid-ali-bhatti-34b680243/", Icon: <BsLinkedin size={25} color="#0a66c2" /> },
 ];
 export const SKILLS = [
   {

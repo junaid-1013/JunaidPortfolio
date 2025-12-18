@@ -3,6 +3,7 @@ import { SKILLS } from "@/config/constants";
 import { useThemeSwitcher } from "@/hooks/useThemeSwitcher";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 import { AnimatedText } from "./AnimatedText";
 
 export const Skill = ({ name, x, y }: any) => {
@@ -37,6 +38,11 @@ const fadeInAnimationVariants = {
 
 export const Skills = () => {
     const { themeMode } = useThemeSwitcher();
+    const [mounted, setMounted] = useState(false);
+
+    useEffect(() => {
+        setMounted(true);
+    }, []);
     
     return (
         <div id="skills">
@@ -47,7 +53,7 @@ export const Skills = () => {
             <div className='grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 xl:grid-cols-9 gap-8 mt-4'>
                 {SKILLS.map(
                     ({ img, imgDark, title }, i) => {
-                        const imageSrc = imgDark && themeMode === "dark" ? imgDark : img;
+                        const imageSrc = mounted && imgDark && themeMode === "dark" ? imgDark : img;
                         return (
                             <motion.div key={i}
                                 variants={fadeInAnimationVariants}
