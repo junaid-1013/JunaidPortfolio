@@ -6,10 +6,19 @@ import {
     VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import { useEffect, useState } from "react";
 import { AnimatedText } from "./AnimatedText";
 
 export const Education = () => {
     const {themeMode}  = useThemeSwitcher();
+    const [mounted, setMounted] = useState(false);
+
+    useEffect(() => {
+        setMounted(true);
+    }, []);
+
+    const effectiveTheme = mounted ? themeMode : "light";
+    
     return (
         <div id="education" className="mt-28">
             <AnimatedText
@@ -23,7 +32,7 @@ export const Education = () => {
                             <VerticalTimelineElement
                                 contentStyle={{
                                     background:
-                                        themeMode === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)",
+                                        effectiveTheme === "light" ? "#f3f4f6" : "rgba(255, 255, 255, 0.05)",
                                     boxShadow: "none",
                                     border: "1px solid rgba(0, 0, 0, 0.05)",
                                     textAlign: "left",
@@ -32,7 +41,7 @@ export const Education = () => {
                                 }}
                                 contentArrowStyle={{
                                     borderRight:
-                                        themeMode === "light"
+                                        effectiveTheme === "light"
                                             ? "0.4rem solid #9ca3af"
                                             : "0.4rem solid rgba(255, 255, 255, 0.5)",
                                 }}
@@ -40,7 +49,7 @@ export const Education = () => {
                                 icon={education.icon}
                                 iconStyle={{
                                     background:
-                                        themeMode === "light" ? "white" : "rgba(61, 61, 61)",
+                                        effectiveTheme === "light" ? "white" : "rgba(61, 61, 61)",
                                     fontSize: "1.5rem",
                                 }}
                                 // visible={true}
