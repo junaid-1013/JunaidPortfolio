@@ -24,7 +24,7 @@ export const CTA = () => {
                             alt="Junaid"
                             className="w-full h-auto rounded-full md:hidden inline-block lg:inline-block"
                             priority
-                            sizes="(max-width: 768px) 100vm,(max-width:1200px) 50vm, 50vm"
+                            sizes="(max-width: 768px) 100vw,(max-width:1200px) 50vw, 50vw"
                         />
                     </div>
                     <div className="flex flex-col items-center self-center lg:w-1/2 w-full text-center lg:text-left">
@@ -48,7 +48,7 @@ export const CTA = () => {
                                 className="flex items-center bg-dark text-light md:p-2.5 md:px-6 
                                 rounded-lg md:text-lg font-semibold
                                 hover:bg-light hover:text-dark
-                                border-2 boder-solid border-transparent hover:border-dark
+                                border-2 border-solid border-transparent hover:border-dark
                                 dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light 
                                 hover:dark:border-light p-2 px-4 text-base gap-x-2"
                                 download={true}

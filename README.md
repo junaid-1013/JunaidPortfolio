@@ -10,7 +10,7 @@
 
 **A stunning, modern portfolio website built with Next.js 14, featuring smooth animations, dark mode, and a beautiful UI/UX.**
 
-[🌐 Live Demo](https://junaidalibhatti.vercel.app/) • [📖 Documentation](#-getting-started) • [🐛 Report Bug](https://github.com/junaid-1013/JunaidPortfolio/issues) • [💡 Request Feature](https://github.com/junaid-1013/JunaidPortfolio/issues)
+[🌐 Live Demo](https://junaidalibhatti.vercel.app/) • [📖 Documentation](#quick-start) • [🐛 Report Bug](https://github.com/junaid-1013/JunaidPortfolio/issues) • [💡 Request Feature](https://github.com/junaid-1013/JunaidPortfolio/issues)
 
 [![GitHub stars](https://img.shields.io/github/stars/junaid-1013/JunaidPortfolio?style=social)](https://github.com/junaid-1013/JunaidPortfolio/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/junaid-1013/JunaidPortfolio?style=social)](https://github.com/junaid-1013/JunaidPortfolio/network/members)
@@ -218,7 +218,7 @@ This is a standard Next.js application and can be deployed to any platform that 
 
 ## 📁 Project Structure
 
-```
+```text
 JunaidPortfolio/
 ├── public/
 │   ├── images/          # Images (profile, projects, skills)

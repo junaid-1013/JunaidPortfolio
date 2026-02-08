@@ -5,6 +5,7 @@
 *,
 html {
   --line-color: #e5e7eb;
+  
   scroll-behavior: smooth !important;
   scrollbar-width: thin;
   scrollbar-color: var(--dark-slate) var(--navy);

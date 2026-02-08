@@ -1,9 +1,9 @@
 "use client";
-import { Dispatch, ReactNode, createContext, useContext, useEffect, useState } from "react";
+import { Dispatch, ReactNode, SetStateAction, createContext, useContext, useEffect, useState } from "react";
 
 interface ThemeSwitcherType {
     themeMode: string;
-    setThemeMode: Dispatch<string>;
+    setThemeMode: Dispatch<SetStateAction<string>>;
 }
 
 const ThemeContext = createContext<ThemeSwitcherType | undefined>(undefined);

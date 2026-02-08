@@ -11,13 +11,13 @@ export const FEATURED_PROJECTS = [
       "Crop Sight optimizes crop monitoring, improves yields, and minimizes seed and fertilizer expenses through precision farming, satellite data, machine learning.",
     link: "https://smartaisolutions.net/",
     github: "https://github.com/junaid-1013",
-    tech: ["NextJs", "Django", "Python", "GEE", "Typescript", "Javacript"],
+    tech: ["NextJs", "Django", "Python", "GEE", "Typescript", "JavaScript"],
   },
   {
     title: "NFT Arena",
     img: "/images/projects/nftArena.png",
     summary:
-      "an NFT marketplace built with Nextjs & Ethereum, empowering creators & collectors in the digital renaissance.",
+      "An NFT marketplace built with Nextjs & Ethereum, empowering creators & collectors in the digital renaissance.",
     link: "https://my-nft-arena.vercel.app/",
     github: "https://github.com/junaid-1013/NFT-Arena",
     tech: ["NextJs", "Typescript", "Metamask", "Ethereum", "Cloudinary", "IPFS"],
@@ -182,7 +182,7 @@ export const EDUCATION_DATA = [
     date: "2024-Present",
     location: "COMSATS University Islamabad(CUI), Lahore Campus",
     icon: React.createElement(LuGraduationCap),
-    info: "Relevant Courses included Advance Computer Vision, Pattern Recognition, Machine Learning and AI.",
+    info: "Relevant Courses included Advanced Computer Vision, Pattern Recognition, Machine Learning and AI.",
   },
   {
     title: "Bachelor of Science In Computer Science",
@@ -219,7 +219,7 @@ export const EXPERIENCE_DATA: ExperienceProps[] = [
     title: "Software Engineer",
     company: "Smart A & I Solutions",
     label: 'SmartAISolutions',
-    period: "Sep 2025 - present",
+    period: "Sep 2025 - Present",
     details: [
       "Led multiple projects and development teams, overseeing task planning, execution, and delivery.",
       "Drove LLM integration in production web applications using LangGraph, enabling intelligent and scalable AI workflows.",
@@ -228,7 +228,7 @@ export const EXPERIENCE_DATA: ExperienceProps[] = [
   },
   {
     id: 'VitalGreen',
-    title: " Web Developer",
+    title: "Web Developer",
     company: "Vital Green Ltd.",
     label: 'VitalGreen',
     period: "Jan 2023 - Aug 2025",
@@ -236,7 +236,7 @@ export const EXPERIENCE_DATA: ExperienceProps[] = [
     details: [
       "Engaged as a NextJS developer, contributing to the development of robust system for agriculture monitoring solutions.",
       "Leading the transformation of Crop-Sight into a practical agriculture monitoring product, focusing on revolutionizing farming practices in Pakistan through technology.",
-      "Specializing in precision farming techniques using utilizing machine learning, satellite imagery and remote sensing for farm management, crop monitoring, yield estimation, and resource optimization."
+      "Specializing in precision farming techniques utilizing machine learning, satellite imagery and remote sensing for farm management, crop monitoring, yield estimation, and resource optimization."
     ]
   },
   {
@@ -260,7 +260,7 @@ export const EXPERIENCE_DATA: ExperienceProps[] = [
     period: "Mar 2025 - Jun 2025",
     duration: "4 months",
     details: [
-      "Developed and optimized Network Fort , a cybersecurity dashboard, using NextJS and SSE for real-time threat visualization.",
+      "Developed and optimized Network Fort, a cybersecurity dashboard, using NextJS and SSE for real-time threat visualization.",
       "Designed secure REST APIs with Elasticsearch integration to enhance threat detection efficiency.",
     ]
   },

@@ -17,11 +17,12 @@ const AnimateNumber = ({ value }: { value: number }) => {
     }, [isInView, value, motionValue]);
 
     useEffect(() => {
-        springValue.on("change", (latest) => {
+        const unsubscribe = springValue.on("change", (latest) => {
             if (ref.current && latest.toFixed(0) <= value) {
                 ref.current.textContent = latest.toFixed(0);
             }
         });
+        return () => unsubscribe();
     }, [springValue, value]);
 
     return <span ref={ref}></span>;
