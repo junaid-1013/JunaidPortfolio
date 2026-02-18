@@ -16,17 +16,11 @@ export const Footer = () => {
                         href="https://www.instagram.com/junaid.ali1014/"
                         className="underline underline-offset-2"
                         target={"_blank"}
+                        rel="noopener noreferrer"
                     >
                         Junaid Ali Bhatti
                     </Link>
                 </div>
-                {/* <Link
-                    href="https://www.instagram.com/junaid.ali1014/"
-                    className="underline underline-offset-2"
-                    target={"_blank"}
-                >
-                    Say hello
-                </Link> */}
             </Layout>
         </footer>
     );
