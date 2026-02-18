@@ -61,6 +61,7 @@ export const NavBar = () => {
                             key={i}
                             href={href}
                             target={"_blank"}
+                            rel="noopener noreferrer"
                             whileHover={{ y: -2 }}
                             whileTap={{ scale: 0.9 }}
                             className={`w-6 mx-3 ${href == "https://www.linkedin.com/in/junaid-ali-bhatti-34b680243/" ? "bg-light" : ""} `}
@@ -110,6 +111,7 @@ export const NavBar = () => {
                                 key={i}
                                 href={href}
                                 target={"_blank"}
+                                rel="noopener noreferrer"
                                 whileHover={{ y: -2 }}
                                 whileTap={{ scale: 0.9 }}
                                 className={`w-6 sm:mr-3 mx-1 ${href == "https://www.linkedin.com/in/junaid-ali-bhatti-34b680243/" ? "bg-light" : ""} 

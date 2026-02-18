@@ -45,6 +45,7 @@ export const CTA = () => {
                             <Link
                                 href="/Junaid's Resume.pdf"
                                 target={"_blank"}
+                                rel="noopener noreferrer"
                                 className="flex items-center bg-dark text-light md:p-2.5 md:px-6 
                                 rounded-lg md:text-lg font-semibold
                                 hover:bg-light hover:text-dark
@@ -59,6 +60,7 @@ export const CTA = () => {
                             <Link
                                 href="mailto:junaid.ali101452@gmail.com"
                                 target={"_blank"}
+                                rel="noopener noreferrer"
                                 className="ml-4 md:text-lg font-medium underline capitalize text-dark dark:text-light text-base"
                             >
                                 Contact

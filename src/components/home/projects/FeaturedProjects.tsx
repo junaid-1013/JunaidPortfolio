@@ -16,6 +16,7 @@ const FeaturedProjects = ({ title, summary, img, link, github, tech, index }: an
             <Link
                 href={link}
                 target="_blank"
+                rel="noopener noreferrer"
                 className="lg:w-1/2 overflow-hidden rounded-lg cursor-pointer w-full"
             >
                 <FramerImage
@@ -35,6 +36,7 @@ const FeaturedProjects = ({ title, summary, img, link, github, tech, index }: an
                 <Link
                     href={link}
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="hover:underline underline-offset-2"
                 >
                     <h2 className="w-full my-2 sm:text-4xl font-bold text-left dark:text-light text-sm">
@@ -59,6 +61,7 @@ const FeaturedProjects = ({ title, summary, img, link, github, tech, index }: an
                     <FramerLink
                         href={github}
                         target="_blank"
+                        rel="noopener noreferrer"
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
                     >
@@ -72,6 +75,7 @@ const FeaturedProjects = ({ title, summary, img, link, github, tech, index }: an
                     <FramerLink
                         href={link}
                         target="_blank"
+                        rel="noopener noreferrer"
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
                         className="font-medium dark:text-light text-sm hover:text-[#1B9CFC]
