@@ -16,15 +16,18 @@ export const Experience = () => {
             <div className="w-full mt-10 flex flex-col md:flex-row gap-16">
                 <ul className="md:w-32 flex flex-col">
                     {EXPERIENCE_DATA.map((work) => (
-                        <li
-                            key={work.id}
-                            onClick={() => setActiveWork(work.id)}
-                            className={`${activeWork === work.id
-                                ? "dark:border-l-white dark:text-white border-l-black text-black "
-                                : "border-l-[#7c7c7c] text-[#7c7c7c]"
-                                } border-l-2 bg-transparent hover:dark:bg-[#272727] hover:bg-[#d1d1d1] py-3 text-sm cursor-pointer duration-300 px-8 font-medium`}
-                        >
-                            {work.label}
+                        <li key={work.id}>
+                            <button
+                                type="button"
+                                aria-pressed={activeWork === work.id}
+                                onClick={() => setActiveWork(work.id)}
+                                className={`${activeWork === work.id
+                                    ? "dark:border-l-white dark:text-white border-l-black text-black "
+                                    : "border-l-[#7c7c7c] text-[#7c7c7c]"
+                                    } border-l-2 bg-transparent hover:dark:bg-[#272727] hover:bg-[#d1d1d1] py-3 text-sm cursor-pointer duration-300 px-8 font-medium`}
+                            >
+                                {work.label}
+                            </button>
                         </li>
                     ))}
                 </ul>
