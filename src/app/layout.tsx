@@ -1,8 +1,8 @@
 import { Footer, NavBar } from "@/components";
-import { ThemeSwitcherProvider } from "@/hooks/useThemeSwitcher";
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
+import { Providers } from "./providers";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -21,14 +21,14 @@ export default function RootLayout({
 }>) {
 
   return (
-    <ThemeSwitcherProvider>
-      <html lang="en">
-        <body className={`${montserrat.variable} font-mont bg-light dark:bg-dark w-full min-h-screen`}>
+    <html lang="en">
+      <body className={`${montserrat.variable} font-mont bg-light dark:bg-dark w-full min-h-screen`}>
+        <Providers>
           <NavBar />
           {children}
           <Footer />
-        </body>
-      </html>
-    </ThemeSwitcherProvider>
+        </Providers>
+      </body>
+    </html>
   );
 }
