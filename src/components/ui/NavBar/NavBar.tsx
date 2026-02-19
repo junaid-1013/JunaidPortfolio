@@ -30,6 +30,9 @@ export const NavBar = () => {
             <button
                 className="flex-col items-center justify-center lg:hidden flex"
                 onClick={handleClick}
+                aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
+                aria-expanded={isOpen}
+                aria-controls="mobile-menu"
             >
                 <span
                     className={`bg-dark dark:bg-light block transition-all duration-300 ease-out h-0.5 w-6 
@@ -87,6 +90,7 @@ export const NavBar = () => {
 
             {isOpen ? (
                 <motion.div
+                    id="mobile-menu"
                     initial={{ scale: 0, opacity: 0, x: "-50%", y: "-50%" }}
                     animate={{ scale: 1, opacity: 1 }}
                     className="min-w-[70vw] flex flex-col justify-between z-30 items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
