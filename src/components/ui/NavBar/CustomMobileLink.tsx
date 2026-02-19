@@ -9,7 +9,7 @@ const CustomMobileLink = ({ href, title, className = "", toggle }: any) => {
     const handleClick = (e: any) => {
         e.preventDefault();
         toggle();
-        
+
         // Handle hash links differently
         if (href.startsWith('#')) {
             setTimeout(() => {
@@ -24,20 +24,22 @@ const CustomMobileLink = ({ href, title, className = "", toggle }: any) => {
     };
 
     return (
-        <Link href={href} className={`${className} relative group text-light dark:text-dark my-2`}>
-            <button onClick={handleClick} className="w-full text-left">
-                {title}
-                <span
-                    className={`
+        <Link
+            onClick={handleClick}
+            href={href}
+            className={`${className} relative group text-light dark:text-dark my-2`}
+        >
+            {title}
+            <span
+                className={`
                     h-[1px] inline-block w-0 bg-light 
                     absolute left-0 -bottom-0.5 
                     group-hover:w-full transition-[width] ease duration-300
                     ${pathname === href ? "w-full" : "w-0"}
                     dark:bg-dark`}
-                >
-                    &nbsp;
-                </span>
-            </button>
+            >
+                &nbsp;
+            </span>
         </Link>
     );
 };
