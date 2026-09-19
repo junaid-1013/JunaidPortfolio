@@ -21,7 +21,7 @@ export const CTA = () => {
                             src="/images/profile/developer-pic.png"
                             width={70}
                             height={100}
-                            alt="Junaid"
+                            alt="Junaid Ali Bhatti"
                             className="w-full h-auto rounded-full md:hidden inline-block lg:inline-block"
                             priority
                             sizes="(max-width: 768px) 100vw,(max-width:1200px) 50vw, 50vw"
@@ -33,13 +33,15 @@ export const CTA = () => {
                             className="!text-left !font-medium sm:!text-base !text-sm"
                         />
                         <AnimatedText
-                            text="Junaid Ali"
+                            text="Junaid Ali Bhatti"
                             className="xl:!text-6xl lg:!text-left lg:!text-5xl !text-center md:!text-6xl sm:!text-5xl !text-4xl"
                         />
                         <p className="my-4 md:text-base font-medium sm:text-sm text-xs text-justify">
-                            I am a Computer Scientist with over 3 years of experience in various domains.
-                            My expertise includes web and mobile app development, Machine Learning, AI, and computer vision.
-                            I have also contributed to research projects.
+                            I am a Senior AI Engineer with 4 years of experience building production LLM agent
+                            systems and the platforms that run them: LangGraph and LangChain workflows, MCP
+                            integrations, RAG over vector databases and multi-tenant FastAPI and Next.js apps
+                            deployed on AWS. My MS thesis introduced a novel GAN architecture that outperforms
+                            14 published baselines, so I build models as well as integrate them.
                         </p>
                         <div className="flex items-center lg:self-start mt-2 self-center">
                             <Link

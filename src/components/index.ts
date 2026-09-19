@@ -2,7 +2,6 @@ export { AnimatedText } from "./AnimatedText";
 export { Education } from "./Education";
 export { Experience } from "./Experience";
 export {
-    CircularText,
     MoonIcon,
     SunIcon
 } from "./Icons";

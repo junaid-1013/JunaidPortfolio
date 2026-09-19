@@ -11,7 +11,8 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: "Junaid Ali Bhatti",
-  description: "Software Developer",
+  description:
+    "Junaid Ali Bhatti, Senior AI Engineer and Full-Stack Developer. LLM agents, RAG, MCP and multi-tenant AI SaaS.",
 };
 
 export default function RootLayout({

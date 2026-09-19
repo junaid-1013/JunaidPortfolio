@@ -52,7 +52,7 @@ export const Skills = () => {
             />
             <div className='grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 xl:grid-cols-9 gap-8 mt-4'>
                 {SKILLS.map(
-                    ({ img, imgDark, title }, i) => {
+                    ({ img, imgDark, Icon, title }, i) => {
                         const imageSrc = mounted && imgDark && themeMode === "dark" ? imgDark : img;
                         return (
                             <motion.div key={i}
@@ -66,10 +66,14 @@ export const Skills = () => {
                                 className='flex flex-col gap-y-2 justify-center items-center'>
                                 <div className='justify-center items-center p-6 rounded-full hover:scale-105 ease-in duration-300 w-28 h-28
                                 shadow-[0px_8px_12px_4px_rgba(0,0,0,0.35)] border-3 border-solid border-gray-900'>
-                                    <Image src={imageSrc}
-                                        width={1000} height={1000}
-                                        className="w-16 h-16"
-                                        alt={title} />
+                                    {Icon ? (
+                                        <Icon className="w-16 h-16 dark:text-light" aria-hidden="true" />
+                                    ) : (
+                                        <Image src={imageSrc as string}
+                                            width={1000} height={1000}
+                                            className="w-16 h-16"
+                                            alt={title} />
+                                    )}
                                 </div>
                                 <div className='flex items-center justify-center text-center'>
                                     <h3>{title}</h3>
